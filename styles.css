@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+@font-face {
+    font-family: Gotham ProLight;
+    src: url(recursos/fonts/GothamPro-Light.ttf);
+}
+
+@font-face {
+    font-family: Gotham ProMedium;
+    src: url(recursos/fonts/GothamPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gotham ProBlack;
+    src: url(recursos/fonts/GothamPro-Black.ttf);
+}
 
 * {
     margin: 0;
@@ -7,7 +20,6 @@
 html,
 body {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -18,34 +30,51 @@ p {
     text-transform: uppercase;
 }
 
-section {
-    min-height: 100%;
-    background-color: #E91E63;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.style {
+    text-align: center;
+    height: 100%;
+    background-image: url(recursos/images/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-.about {
-    background-color: #E91E63;
+.title {
+    position: relative;
+    padding-top: 5%;
 }
 
+.anio {
+    color: #706f72;
+    font-size: 22.778pt;
+    font-family: Gotham ProLight;
+}
+
+.info {
+    font-family: Gotham ProLight;
+    color: #706f72;
+    font-size: 106.942pt;
+}
+
+.anual {
+    font-family: Gotham ProBlack;
+    font-size: 110.331pt;
+    color: #e62730;
+}
+
+.lines {
+    background-color: #e62730;
+    width: 200px;
+    height: 2px;
+}
 .home {
-    background-color: #e62730;
-}
-
-.portfolio {
-    background-color: #4CAF50;
-}
-
-.contact {
-    background-color: #e62730;
+    background-color: #ffffff;
 }
 
 i {
+    position: absolute;
+    right: 50px;
     font-size: 3rem;
-    color: white;
+    color: #e62730;
     padding: 1rem;
 }
 
@@ -53,7 +82,7 @@ a {
     text-decoration: none;
     font-weight: 700;
     font-size: 4rem;
-    color: #e62730;
+    color: #ffffff;
     transition-duration: 0.3s;
     opacity: 0.8;
     padding: 2rem;
@@ -63,14 +92,14 @@ a {
 a:hover {
     color: #e62730;
     opacity: 1;
-    text-shadow: 0px 2px 5px #fafafa;
+    text-shadow: 0px 0px 5px #e62730;
 }
 
 ul {
     padding: 0;
-    list-style: none;
+ 
     line-height: 5rem;
-    text-align: center;
+    text-align: right;
 }
 
 navigation {
@@ -100,4 +129,22 @@ div.toggle {
     top: 0;
     cursor: pointer;
     z-index: 999;
+}
+
+@media only screen and (max-width: 768px) {
+    .info {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .anual {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .style {
+        width: 100%;
+    }
 }
