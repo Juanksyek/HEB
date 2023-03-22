@@ -36,6 +36,8 @@ p {
     background-image: url(recursos/images/portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .title {
@@ -43,7 +45,8 @@ p {
     padding-top: 5%;
 }
 
-.anio {
+#anio {
+    margin-top: -2%;
     color: #706f72;
     font-size: 22.778pt;
     font-family: Gotham ProLight;
@@ -147,15 +150,21 @@ div.toggle {
     z-index: 999;
 }
 
+@media only screen and (max-width: 768px){
+    .anio{
+        margin-top: 5%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .info {
-        font-size: 30px;
+        font-size: 70px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .anual {
-        font-size: 40px;
+        font-size: 80px;
     }
 }
 
