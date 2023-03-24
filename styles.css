@@ -45,7 +45,7 @@ p {
     padding-top: 5%;
 }
 
-#anio {
+.anio {
     margin-top: -2%;
     color: #706f72;
     font-size: 22.778pt;
@@ -83,6 +83,7 @@ i {
 }
 
 a {
+    font-family: Gotham ProMedium;
     text-decoration: none;
     font-weight: 700;
     font-size: 4rem;
